@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+@media screen and (min-width: 751px){
+    /* 751px以上に適用されるCSS（PC用） */
+    .container {
+        width: flex;
+        padding: 0 15px;
+        margin: 0px auto;
+    }
+    .top-wrapper {
+        padding: 360px 0 200px 0;
+        margin-bottom: 100px;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),url(../popoimg/IMG_2890.JPG);
+        background-size: cover;
+        background-position: 50% 50%;
+        color: #6699A1;
+        text-align: center;
+    }
+    .header-right ul {
+      display: flex;
+      margin-right: 15px;
+  }
+  .header-right li {
+      list-style: none;
+  }
+    .top-wrapper p {
+        font-family: 'Neucha', cursive;
+        opacity: 0.7;
+        letter-spacing: 2px;
+        font-size: 2vw;
+        margin-top: -250px;
+        margin-bottom: 0;
+    }
+    .top-wrapper h1 {
+        font-family: 'hanazome', cursive;
+        opacity: 0.7;
+        letter-spacing: 5px;
+        font-size: 4vw;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }.top-wrapper h2 {
+        font-family: 'hanazome', cursive;
+        opacity: 0.7;
+        letter-spacing: 5px;
+        font-size: 6vw;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .concept-wrapper {
+        text-align: center;
+    }
+    .concept-wrapper h3 {
+        font-size: 2vw;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .concept-wrapper p {
+        font-size: 25px;
+        margin-top: 0;
+    }
+    .reserve-wrapper {
+        text-align: center;
+    }
+
+    .reserve-wrapper h4 {
+        font-size: 40px;
+        letter-spacing: 2px;
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+    .reserve-wrapper p {
+        font-size: 25px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+.openbtn4{
+    position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+    background:#D54884;
+    cursor: pointer;
+      width: 50px;
+      height:50px;
+    border-radius: 5px;
+  }
+  
+  /*ボタン内側*/
+  .openbtn4 span{
+      display: inline-block;
+      transition: all .4s;/*アニメーションの設定*/
+      position: absolute;
+      left: 14px;
+      height: 2px;
+      border-radius: 5px;
+    background: #fff;
+      width: 45%;
+    }
+  
+  
+  .openbtn4 span:nth-of-type(1) {
+    top:13px; 
+  }
+  
+  .openbtn4 span:nth-of-type(2) {
+    top:19px;
+  }
+  
+  .openbtn4 span:nth-of-type(3) {
+    top:25px;
+  }
+  
+  .openbtn4 span:nth-of-type(3)::after {
+    content:"Menu";/*3つ目の要素のafterにMenu表示を指定*/
+    position: absolute;
+    top:5px;
+    left:-2px;
+    color: #fff;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+  }
+  
+  /*activeクラスが付与されると線が回転して×になり、Menu⇒Closeに変更*/
+  
+  .openbtn4.active span:nth-of-type(1) {
+      top: 14px;
+      left: 18px;
+      transform: translateY(6px) rotate(-45deg);
+      width: 30%;
+  }
+  
+  .openbtn4.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  
+  .openbtn4.active span:nth-of-type(3){
+      top: 26px;
+      left: 18px;
+      transform: translateY(-6px) rotate(45deg);
+      width: 30%;
+  }
+  
+  .openbtn4.active span:nth-of-type(3)::after {
+    content:"Close";/*3つ目の要素のafterにClose表示を指定*/
+      transform: translateY(0) rotate(-45deg);
+    top:5px;
+    left:4px;
+  }
+  /*========= レイアウトのためのCSS ===============*/
+  
+  body{
+    background:#f3f3f3;
+      padding:20px;
+  }
+  
+  
+  a{
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .lead{
+    margin:20px 0 0 0;
+  }
+  
+  .btn-block{
+    width:200px;  
+    padding: 30px;
+  }
+    }
+    
